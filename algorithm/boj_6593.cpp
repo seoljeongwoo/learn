@@ -30,7 +30,7 @@ void bfs(){
             int nz = curr.z + dz[i];
             if(0<=nx && nx<l && 0<=ny && ny<r && 0<= nz && nz<c){
                 if(v[nx][ny][nz] == -1 && b[nx][ny][nz] != '#'){
-                    v[nx][ny][nz] = v[curr.x][curr.y][curr.z] + 1;
+                    v   [nx][ny][nz] = v[curr.x][curr.y][curr.z] + 1;
                     que.push(node(nx,ny,nz));
                 }
             }
